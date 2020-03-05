@@ -1,0 +1,23 @@
+{
+  "name": "contributor-discord-action",
+  "version": "1.0.0",
+  "description": "Congratulate new contributors in Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3zk1m0/contributor-discord-action.git"
+  },
+  "author": "3zk1m0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3zk1m0/contributor-discord-action/issues"
+  },
+  "homepage": "https://github.com/3zk1m0/contributor-discord-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
