@@ -1,21 +1,33 @@
 # contributor-discord-action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This actions sends welcoming message to discord chat with webhook.
 
 ## Inputs
 
-### `who-to-greet`
+### `user`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** Username that is used as name of the messages sender.
 
-## Outputs
+### `url`
 
-### `time`
+**Required** Discords webhook url.
 
-The time we greeted you.
+### `name`
+
+**Required** User to be greeted.
+
+### `message`
+
+**Required** Greeting message to be sent.<br>
+To specify name location use "{name}" in message,<br>
+if not specified name is added at the end ", {name}".
+
 
 ## Example usag
 
-uses: actions/hello-world-javascript-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+uses: actions/contributor-discord-action@v1<br>
+with:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;user: Welcome bot<br>
+&nbsp;&nbsp;&nbsp;&nbsp;url: ${{ secrets.DISCORD_WEBHOOK }}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name: 'Con the Contributor'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;message: Welcome {name} to the project<br>
